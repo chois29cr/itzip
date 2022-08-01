@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/*textureImg공간에 깔리는 레이어 설정? */
+.textureImg {
+	position: relative;  /*검은색 화면*/
+	background-color: white; /*black이면 사진에 미묘하게 검은 테두리 생김 */
+	color:white; /*폰트컬러*/
+	width:250px;
+	height:250px;  /*호버했을 때 뜨는 검은화면 사이즈 */
+	border-radius:25px;
+	cursor:pointer; /*호버했을 때 커서 모양*/
+	transition: all 0.35s ease;
+	margin:10px;
+}
+
+/*호버했을 때 검은 화면 효과..  빼면 안됨*/
+.textureImg:after {
+	content: '';
+	background-color: rgba(0, 0, 0, 0.65);
+	transition: all 0.35s ease;
+	opacity: 0;  /*이거 건들면 transition 안 먹음 */
+}
+
+/* img태그 사진 설정*/
+.textureImg img {
+	width:250px;
+	height:250px;
+	border-radius:25px;
+}
+
+/* 마우스 호버시 검은화면에 글자 배치 */
+.textureImg figcaption {
+	z-index: 1;
+	padding: 40px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;	
+}
+
+/* h3 폰트 효과 */
+.textureImg h3 {
+	line-height: 1.1em;
+	font-size: 1.4em;
+	text-transform: uppercase;
+	opacity: 0;
+	margin: 10px 0;	
+}
+
+/* p 폰트 효과 */
+.textureImg p {
+	font-size: 15px;
+	letter-spacing: 1px;
+	opacity: 0;
+}
+
+/*사진 클릭시 class명 변경되고 적용됨*/
+.clickTexturImg {
+	opacity: 0.4;
+}
+
+.clickTextureImg{
+	content: '';
+    background-color: rgba(0, 0, 0, 0.65);    
+}
+
+
+/*사진 클릭시 클래스명 변하고 h3, p3 속성..*/
+.clickTexturImg h3,
+.clickTexturImg p {
+	color:black;
+	opacity: 1;    /*클릭하면 투명도 해제되어 글씨 박제됨*/
+}
+
+
+
+
+/*아래는 호버했을 때 효과.. 잘 모르겠음 */
+.textureImg.hover img {
+	zoom: 1;
+	filter: alpha(opacity=50);
+	-webkit-opacity: 0.5;
+	opacity: 0.5;
+}
+
+.textureImg:hover:after{
+	opacity: 1;
+	position: absolute;
+	top: 10px;
+	bottom: 10px;
+	left: 10px;
+	right: 10px;
+	
+}
+.textureImg.hover:after {
+	opacity: 1;
+	position: absolute;
+	top: 10px;
+	bottom: 10px;
+	left: 10px;
+	right: 10px;
+}
+
+.textureImg:hover h3,
+.textureImg.hover h3,
+.textureImg:hover p,
+.textureImg.hover p {
+	-webkit-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);
+	opacity: 1;
+}

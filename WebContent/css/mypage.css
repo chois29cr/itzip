@@ -1,0 +1,156 @@
+@charset "UTF-8";
+.view_more{
+	text-decoration:none;
+	color:black;
+	background-color:#D9CAD9;
+}
+
+.mypost{height:30px;}
+.mypost:hover{
+	background-color:#DAE3F3;
+	cursor:pointer;
+}
+
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;	
+}
+.mytd {
+	text-align:center;
+	height:40px;
+}
+
+.tablecol {
+	height:30px;
+}
+
+.innertable {
+	margin-left: auto;
+	margin-right: auto;
+	border:1px solid #E6E6E6;
+	/*border-collapse:collapse;*/
+}
+
+.page_nation {
+	display:inline-block;
+	border:1px solid #ffffff;
+	border-radius:50%;
+	width:35px;
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	font-size:13px;
+	color:#999999;
+	text-decoration:none;
+}
+
+.page_nation:hover {
+	background-color:#DAE3F3;
+}
+
+.active {
+	display:inline-block;
+	border:1px solid #ffffff;
+	border-radius:50%;
+	width:35px;
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	font-size:13px;
+	color:#999999;
+	text-decoration:none;
+	background-color:#DAE3F3;
+}
+
+/* 관리자 현재페이지 표시(형광펜) */
+.cur_active {
+	font-size:18px;
+	background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FFD0AE 50%);
+	text-align:center;
+}
+
+.cur_pagenation{
+	font-size:18px;
+	 color: #333;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 0;
+  position: relative;
+}
+.cur_pagenation:after{
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #ffb000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.cur_pagenation:hover:after{
+  width: 150%;
+  left: -16px;
+}
+
+
+.imgcircle {
+	border-radius: 25px;
+	width:50px;
+	height:50px;
+	object-fit:cover;
+}
+
+.myreply {
+	text-align:left;
+	vertical-align: middle;
+}
+
+.replyhr {
+	width:97%;
+	vertical-align: top;
+}
+
+.boardtable {
+	font-size: small;
+}
+
+.sline {
+	border-bottom:2px solid #ebebeb;
+}
+
+.line {
+	border-bottom:1px solid black;
+}
+
+.anon {
+	text-decoration: none;
+	color: black;
+}
+
+.daily:hover {
+	background-color: #FFD0AE;
+}
+
+.activeBtn{
+	outline: 1px solid #ffffff;
+	border-radius: 25px;
+	background-color:#F9F9F9;
+	color:#000;
+	border:none;
+	text-align:center;
+	width:40px;
+	height:30px;	
+	display:inline-block;
+	cursor:pointer;
+	margin:3px;	
+}
+
+.activeBtn:hover{
+	border: 1px solid #F9F9F9;
+ 	background-color:#c0c0c0;
+ 	color:black;
+	transition: background-color .3s;	
+}

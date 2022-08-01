@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.tablecol {
+	height:50px;
+}
+
+.inputbox {
+	height:40px;
+	width:300px;
+}
+
+.inputbox:focus {
+	outline:3px solid #ffffff;
+}

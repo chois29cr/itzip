@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>잇집 채팅방</title>
+<link rel="stylesheet" type="text/css" href="../css/chat.css">
+</head>
+<body>
+	<table class="ctable" style="margin-left: auto; margin-right: auto;" cellpadding="0" cellspacing="0" border="0" width="200px">
+		<tr>
+			<td class="ctd" height="40px">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table border="0">
+					<tr>
+						<td>
+							<textarea class="chatbox" id="messageWindow" readonly="true"></textarea>
+							<br/>
+							<input class="inputchat" id="inputMessage" type="text" onKeyPress="if( event.keyCode==13 ){addEnter();}"> 
+							
+							<input class="buttonD" type="submit" value="send" onclick="send()" />
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td class="ctd2" height="40px">
+			</td>
+		</tr>
+	</table>
+</body>
+<script type="text/javascript">
+
+var textarea = document.getElementById("messageWindow");
+var webSocket = new WebSocket('ws://192.168.0.109:8080/teamc2/broadcasting');
+var inputMessage = document.getElementById('inputMessage');
+
+webSocket.onerror = function(event) {
+  onError(event)
+};
+
+webSocket.onopen = function(event) {
+  onOpen(event)
+};
+
+webSocket.onmessage = function(event) {
+  onMessage(event)
+};
+
+function onMessage(event) {
+    textarea.value += "상대 : " + event.data + "\n";
+}
+
+function onOpen(event) {
+    textarea.value += "채팅방에 입장하셨습니다.\n";
+    inputMessage.focus();
+}
+
+function onError(event) {
+  alert(event.data);
+}
+
+function send() {
+    textarea.value += "나 : " + inputMessage.value + "\n";
+    webSocket.send(inputMessage.value);
+    inputMessage.value = "";
+    inputMessage.focus();   
+    
+}
+ 
+function addEnter() {
+	if(inputMessage.value == ""){
+		return false;
+	}
+	send();
+}
+</script>
+</html>

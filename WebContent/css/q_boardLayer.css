@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+.imgView{
+	max-width: 900px;
+	max-height: 500px;
+}
+
+.labelcell{
+	height:50px;
+	background-color:#ffffff;
+	border: none;	
+}
+
+.labeltd{
+	width:200px;
+	background-color:#ffffff;
+	text-align:center;
+}
+
+div.category{
+	position: relative;
+	left:300px;
+	font-family: 리디바탕;
+	font-size: 30;
+	padding: 20px;
+}
+
+/* qWrite.jsp 제목 박스 */
+.titlebox{
+	width:950px;
+	height:35px;
+	border:none;
+	font-size:16px;
+}
+
+/*글 구분선 */
+.line {
+	border-top:2px solid #DAE3F3;
+}
+
+/* qWrite.jsp 내용 박스 */
+.bodybox{
+	width:950px;
+	height:500px;
+	overflow:auto;
+	resize: none;
+	background-color:#FFFFFF;
+	border:none;	
+	margin: 5px 0px 0px 0px;
+	vertical-align: top;
+	line-height:130%;
+	font-size:16px;
+} 
+
+/* qWrite.jsp댓글박스 */
+.rebox{
+	width:600px;
+	height:45px;
+	overflow:auto;
+	resize: none;
+	background-color:#FFFFFF;
+	border:none;	
+	margin: 5px 0px 0px 0px;
+	border: 1px solid #DBDBDB;
+} 
+
+.rebox:focus {outline:2px solid #6AAFE6;}
+
+#modal{
+	display:none;
+	position:relative;
+	z-index:1; 
+}
+#modalFrm{
+	position:fixed;
+	left:35%;
+	top:30%;
+}
+.modalCont{
+	outline: 1px solid #D2E6E3;
+	background-color: #F8F9F9;
+	width:500px;
+	height:150px;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.modalBG{
+	position:fixed;
+ 	top:0;
+ 	left:0;
+ 	height:100%;
+ 	width:100%;
+	background:rgba(0, 0, 0, 0.1);
+	z-index:-1;
+}
+
+/*페이징*/
+.page_nation {
+	display:inline-block;
+	border:1px solid #ffffff;
+	border-radius:50%;
+	width:35px;
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	font-size:13px;
+	color:#999999;
+	text-decoration:none;
+}
+.page_nation:hover {background-color:#DAE3F3;}
+.active {
+	display:inline-block;
+	border:1px solid #ffffff;
+	border-radius:50%;
+	width:35px;
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	font-size:13px;
+	color:#999999;
+	text-decoration:none;
+	background-color:#DAE3F3;
+}

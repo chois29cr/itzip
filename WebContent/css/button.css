@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+.imgBtn{
+	cursor:pointer;
+}
+
+.buttonA{
+	outline: 1px solid #ffffff;
+	background-color:#6AAFE6;
+	color:white;
+	border:none;
+	text-align:center;
+	width:100px;
+	height:35px;	
+	display:inline-block;
+	cursor:pointer;
+	margin:3px;
+}
+
+.buttonA:hover{
+	outline: 1px solid #ffffff;
+ 	background-color:#b9dcf0;
+ 	color:black;
+	transition: background-color .3s; 	
+}
+
+.loginbutton{
+	outline: 1px solid #ffffff;
+	background-color:#6AAFE6;
+	color:white;
+	border:none;
+	border-radius: 25px;
+	text-align:center;
+	width:100px;
+	height:100px;	
+	display:inline-block;
+	cursor:pointer;
+	margin:3px;
+}
+
+.loginbutton:hover{
+	outline: 1px solid #ffffff;
+	border-radius: 25px;
+ 	background-color:#b9dcf0;
+ 	color:black;
+	transition: background-color .3s;
+}
+
+.buttonB{
+	outline: 1px solid #ffffff;
+	background-color:#ffffff;
+	color:black;
+	border:none;
+	text-align:center;
+	width:130px;
+	height:30px;	
+	display:inline-block;
+	cursor:pointer;
+	margin:3px;	
+}
+
+.buttonB:hover{
+	border: 1px solid #F5F5F5;
+	border-radius: 25px;
+ 	background-color:#F5F5F5;
+ 	color:black;
+	transition: background-color .3s;
+}
+
+
+.buttonC{
+	outline: 1px solid #ffffff;
+	border-radius: 25px;
+	background-color:#F9F9F9;
+	color:#E5E5E5;
+	border:none;
+	text-align:center;
+	width:40px;
+	height:30px;	
+	display:inline-block;
+	cursor:pointer;
+	margin:3px;	
+}
+
+.buttonC:hover{
+	border: 1px solid #F9F9F9;
+ 	background-color:#F5F5F5;
+ 	color:black;
+	transition: background-color .3s;	
+}
+
+.buttonD{
+	outline: 1px solid #ffffff;
+	border-radius: 25px;
+	background-color:#F9F9F9;
+	color:#000;
+	border:none;
+	text-align:center;
+	width:100px;
+	height:30px;	
+	display:inline-block;
+	cursor:pointer;
+	margin:3px;	
+}
+
+.buttonD:hover{
+	border: 1px solid #F5F5F5;
+ 	background-color:#F5F5F5;
+ 	color:black;
+	transition: background-color .3s;	
+}
+
+.btnLike{
+	border: none;
+	outline:none;
+}

@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+*{
+	background-color:#FCFCFC;
+	color:#101566;
+	font-family: 리디바탕;
+}
+
+.buttonD{
+	border-radius: 25px;
+	background-color:#F3F3F3;
+	color:#bcbcbc;
+	border:2px solid #DAE3F3;
+	text-align:center;
+	width:100px;
+	height:40px;	
+	display:inline-block;
+	cursor:pointer;
+	margin:3px;	
+}
+
+.buttonD:hover{
+	border: 2px solid #E8E8E8;
+ 	background-color:#75baff;
+ 	color:#101566;
+	transition: background-color .7s;	
+}
+
+.chatbox{
+	resize: none;
+	width:400px;
+	height:500px;
+	border: 1px solid #DAE3F3;
+	background-color: #FCFCFC;
+}
+
+.chatbox:focus {
+	outline:1px solid #F3F3F3;
+}
+
+.inputchat {
+	height:40px;
+	width:280px;
+	border:1px solid #DAE3F3;
+}
+
+.inputchat:focus {
+	outline:3px solid #DAE3F3;
+}
+
+.ctable{
+	border-radius: 20px;
+}
+
+.ctd{
+	border: none;
+	background-color:#DAE3F3;
+	border-radius: 20px 20px 0 0;
+	border-bottom:3px solid #F3F3F3;
+}
+
+.ctd2{
+	border: none;
+	background-color:#DAE3F3;
+	border-radius: 0 0 20px 20px;
+	border-top:3px solid #F3F3F3;
+}

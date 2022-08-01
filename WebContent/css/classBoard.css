@@ -1,0 +1,312 @@
+@charset "UTF-8";
+
+.line {
+	border-bottom:2px solid #f3f3f3;
+}
+
+.tline{
+	border-top: 2px solid #f3f3f3;
+}
+
+.cbody{
+	line-height:130%;
+}
+
+.jjimTable {
+	background-color:#fff;
+	color:black;
+	border:none;
+	box-shadow: 2px 2px 1px 1px #f7f7f7;
+	text-align:center;
+	width:120px;
+	height:140px;	
+	display:inline-block;
+	cursor:pointer;
+	margin:3px;
+	position: fixed;
+	right: 100px;
+	top: 20%;
+}
+
+.jjim:hover {
+	box-shadow: 0 -1px 16px rgb(0 0 0 / 20%);
+}
+
+.feed{
+	background-color:#FDFDFD;
+	width: 100%;
+	height: 200px;
+	resize: none;
+	border-radius: 2px;
+	border: 1px solid #f3f3f3;
+}
+
+.profile{
+	box-shadow: 1px 1px 1px 1px #f7f7f7;
+}
+
+.btnPick{
+	background-color:#fff;
+	width:40px;
+	height:40px;
+	border: none;
+	outline:none;
+}
+
+.btnPick:hover{
+	border: 1px solid #ffffff;
+ 	background-color:#F5F5F5;
+ 	color:black;
+	transition: background-color .3s;
+}
+
+.jc {
+	color:black;
+}
+
+/*셀렉트 박스*/
+select {
+	width: 100px;
+	padding: .8em .5em;
+	border: 1px solid #CADBE9;
+	background: url('../images/arrow.jpg') no-repeat 95% 50%;
+	border-radius: 0px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+select:focus {outline:2px solid #6AAFE6;}
+
+select::-ms-expand {display: none;}
+
+.searchboxm {
+	width:600px;
+	height:35px;
+	border:1px solid #CADBE9;
+}
+
+.searchboxm:focus {outline:2px solid #6AAFE6;}
+
+/*페이징*/
+.page_nation {
+	display:inline-block;
+	border:1px solid #ffffff;
+	border-radius:50%;
+	width:35px;
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	font-size:13px;
+	color:#999999;
+	text-decoration:none;
+}
+
+.page_nation:hover {background-color:#DAE3F3;}
+
+.active {
+	display:inline-block;
+	border:1px solid #ffffff;
+	border-radius:50%;
+	width:35px;
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	font-size:13px;
+	color:#999999;
+	text-decoration:none;
+	background-color:#DAE3F3;
+}
+
+/* Grow */
+.imglow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.parent {
+	width: 200px; 
+    height: 200px; 
+    overflow: hidden;
+}
+
+.parent:hover {
+    border:2px solid #6AAFE6;
+}
+
+.imglow:hover,
+.imglow:focus,
+.imglow:active {
+    transform: scale(1.1);
+}
+
+/*사진 업로드 시, 썸네일 최대 사이즈 */
+#div_thumbnail img{
+	max-width:300px;
+	max-height:400px;
+}
+
+.inputbox{
+	width:990px;
+	height:35px;
+	border:none;
+}
+
+.textbox{
+	width:490px;
+	height:400px;
+	resize:none;
+}
+
+.rebox{
+	width:600px;
+	height:45px;
+	overflow:auto;
+	resize: none;
+	background-color:#FFFFFF;
+	border:none;	
+	margin: 5px 0px 0px 0px;
+	border: 1px solid #DBDBDB;
+} 
+
+.rebox:focus {outline:4px solid #F8F8F8;}
+
+#modal{
+	display:none;
+	position:relative;
+	z-index:1; 
+}
+
+#modalFrm{
+	position:fixed;
+	left:35%;
+	top:30%;
+}
+
+.modalCont{
+	outline: 1px solid #D2E6E3;
+	background-color: #F8F9F9;
+	width:500px;
+	height:150px;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.modalBG{
+	position:fixed;
+ 	top:0;
+ 	left:0;
+ 	height:100%;
+ 	width:100%;
+	background:rgba(0, 0, 0, 0.1);
+	z-index:-1;
+}
+
+/*사진 업로드 시, 썸네일 최대 사이즈 */
+img{
+	max-width:900px;
+}
+
+.imgcircle{
+	border-radius: 25px;
+	width:50px;
+	height:50px;
+	object-fit:cover;
+}
+.bclass{
+	background-color:#000000;
+	color: white;
+	width:100%;
+	height:50px;
+}
+.iparent {
+	width: 500px; 
+    overflow: hidden;
+}
+
+/* 스크롤 바 크기 지정하기 */ 
+::-webkit-scrollbar { width: 10px; height: 0px;} 
+/* 스크롤 바가 차지하지 않는 배경 부분 */ 
+::-webkit-scrollbar-track { background-color:#fff; } 
+/* 스크롤 바 */ 
+::-webkit-scrollbar-thumb { background: black; border-radius: 20px; } 
+/* 스크롤 바 위에 마우스를 올려다 둘 때 */ 
+::-webkit-scrollbar-thumb:hover { background: #002060; } 
+/* 실질적 스크롤 바를 클릭/드래그할 때 */ 
+::-webkit-scrollbar-thumb:active { background: #002060; }
+.bar { 
+	border: 2px solid #444; 
+	border-top: 0px; 
+	border-right: 0px; 
+	border-left: 0px; 
+	opacity: 80%; 
+}
+.bar-container { 
+	float: right;
+}
+.bar-container img{
+	max-height: 20px; 
+}
+
+.title{
+	border: 1px solid #f8f8f8; 
+}
+.retitle{
+	border: 1px solid #f8f8f8; 
+	width:100%;
+	height:50px;
+}
+
+
+#box {
+    height:20px;
+    width:210px;
+    background:#fff;
+    cursor:pointer;
+}
+.hidden {
+	height:0px;
+	visibility: hidden;
+	dbox-shadow: 0 -1px 16px rgb(0 0 0 / 20%);
+    border-radius: 10px;
+}
+.hidden.open {
+	height:45px;
+	visibility: visible;
+	dbox-shadow: 0 -1px 16px rgb(0 0 0 / 20%);
+    border-radius: 10px;
+}
+
+.bimg {
+	border: 1px solid #f8f8f8;
+	border-radius: 10px;
+}
+
+.class_cate:hover{
+	box-shadow: 0 -1px 16px rgb(0 0 0 / 20%);
+}
+
+/* 해보자 */
+.mainbody{
+	border-radius: 10px;
+	border-style: solid;
+    border-top-width: thin;
+    border-bottom-width: thin;
+    border-left-width: thin;
+    border-right-width: thin;
+}
+
+/* cView.jsp 로그인x일 때 알림 박스 */
+.nonebox {
+    border: 1px solid #E6E6E6;
+    height:40px;
+    width: 980px;
+    background-color: #FBFBFB;
+    padding:0 0 0 20px;
+}

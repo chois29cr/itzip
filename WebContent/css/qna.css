@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/* qna 게시판 검색 박스 */
+.searchboxm {
+	width:600px;
+	height:35px;
+	border:1px solid #CADBE9;
+}
+.searchboxm:focus {outline:2px solid #6AAFE6;}
+
+/*글 구분선 */
+.line {
+	border-bottom:1px solid #DAE3F3;
+}
+
+/*셀렉트 박스*/
+select {
+	width: 100px;
+	padding: .8em .5em;
+	border: 1px solid #CADBE9;
+	background: url('../images/arrow.jpg') no-repeat 95% 50%;
+	border-radius: 0px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+select:focus {outline:2px solid #6AAFE6;}
+select::-ms-expand {display: none;}
+
+
+/*페이징*/
+.page_nation {
+	display:inline-block;
+	border:1px solid #ffffff;
+	border-radius:50%;
+	width:35px;
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	font-size:13px;
+	color:#999999;
+	text-decoration:none;
+}
+.page_nation:hover {background-color:#DAE3F3;}
+.active {
+	display:inline-block;
+	border:1px solid #ffffff;
+	border-radius:50%;
+	width:35px;
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	font-size:13px;
+	color:#999999;
+	text-decoration:none;
+	background-color:#DAE3F3;
+}
+
+

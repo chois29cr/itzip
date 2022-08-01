@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.head{
+	background-color: #94D8F6;
+	color: white;
+	height: 50px;
+}
+
+.classbutton{
+	outline: 1px solid #ffffff;
+	background-color:#F9F9F9;
+	color:#002060;
+	border:none;
+	text-align:center;
+	width:500px;
+	height:40px;	
+	display:inline-block;
+	cursor:pointer;
+	margin:3px;	
+	font-size: 15px;
+}
+
+.classbutton:hover{
+	border: 1px solid #F5F5F5;
+ 	background-color:#C8EBFA;
+ 	color:black;
+	transition: background-color .3s;	
+}
+
+.line{
+	border-bottom: 2px solid #C8EBFA;
+}
+
+.inputbox{
+	width:990px;
+	height:40px;
+	border:none;
+	outline: 1px solid #C8EBFA;
+}
+
+.inputbox:focus {outline:2px solid #6AAFE6;}
